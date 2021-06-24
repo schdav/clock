@@ -1,0 +1,9 @@
+.clock {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  left: 50%;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
