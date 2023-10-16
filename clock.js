@@ -30,7 +30,7 @@ function showTime() {
   document.getElementById('minutes').innerText = minutes + ' minutes left';
 
   var percent = Math.round((elapsed / 1440) * 100);
-  document.getElementById('percent').innerText = 'ca. ' + percent + ' % elapsed';
+  document.getElementById('percent').innerText = 'approx. ' + percent + ' % elapsed';
 }
 
 setTimeout(showTime, 1000);
