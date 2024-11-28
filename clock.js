@@ -17,8 +17,8 @@ function showTime() {
     dayTime = 'PM';
   }
 
-  hour = (hour < 10) ? '0' + hour : hour;
-  minute = (minute < 10) ? '0' + minute : minute;
+  hour = hour < 10 ? '0' + hour : hour;
+  minute = minute < 10 ? '0' + minute : minute;
 
   var time = hour + ':' + minute + ' ' + dayTime;
   document.getElementById('clock').innerText = time;
@@ -30,7 +30,8 @@ function showTime() {
   document.getElementById('minutes').innerText = minutes + ' minutes left';
 
   var percent = Math.round((elapsed / 1440) * 100);
-  document.getElementById('percent').innerText = 'approx. ' + percent + ' % elapsed';
+  document.getElementById('percent').innerText =
+    'approx. ' + percent + ' % elapsed';
 }
 
 setTimeout(showTime, 1000);
